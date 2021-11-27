@@ -8,6 +8,7 @@ const toggleOccupation = (e) => {
   occupationContainer.style.display = "flex";
  } else {
   occupationContainer.style.display = "none";
+  document.querySelector("#occupation").value = "";
  }
 };
 
