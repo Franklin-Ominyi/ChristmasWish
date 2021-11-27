@@ -2,14 +2,12 @@ const occupationContainer = document.querySelector("#occupation-container");
 const loader = document.querySelector("#loader");
 
 const isStudent = document.form.education;
-let occupationDOM;
+
 const toggleOccupation = (e) => {
  if (e === "no") {
   occupationContainer.style.display = "flex";
-  occupationDOM = document.querySelector("#occupation").value;
  } else {
   occupationContainer.style.display = "none";
-  occupationDOM = "";
  }
 };
 
@@ -23,7 +21,7 @@ const handleSubmit = (e) => {
  let fullName = document.querySelector("#name").value;
  let age = document.querySelector("#age").value;
  let phoneNumber = document.querySelector("#phoneNumber").value;
-
+ let occupationDOM = document.querySelector("#occupation").value;
  let email = document.querySelector("#email").value.toLowerCase();
  let facebookUsername = document.querySelector("#facebookUsername").value;
  let wish = document.querySelector("#wish").value;
