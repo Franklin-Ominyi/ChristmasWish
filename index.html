@@ -5,11 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/style.css" />
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css"
+  />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
   <title>Christmas Wish | Registration</title>
  </head>
  <body>
   <div class="container">
    <div class="overlay">
+    <!-- <h1>
+     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam corrupti
+     incidunt natus dicta!
+    </h1> -->
     <div class="register-container">
      <h1>Register</h1>
 
@@ -71,13 +84,7 @@
 
       <div class="input-container" id="occupation-container">
        <label for="occupation">Occupation:</label>
-       <input
-        type="text"
-        name="occupation"
-        placeholder="Your occupation"
-        id="occupation"
-        required
-       />
+       <input type="text" placeholder="Your occupation" id="occupation" />
       </div>
 
       <div class="input-container">
@@ -116,11 +123,16 @@
         required
        ></textarea>
       </div>
+      <div id="loader">
+       <i class="fa fa-spinner fa-spin fa-2x" aria-hidden="true"></i>
+      </div>
       <button type="submit" id="submitBtn">Submit</button>
      </form>
     </div>
    </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
   <script src="/js/script.js"></script>
  </body>
 </html>
