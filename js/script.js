@@ -55,7 +55,7 @@ const handleSubmit = (e) => {
    if (!res.error) {
     Swal.fire(
      "Congratulations!",
-     "Your submission was recieved and have been recorded",
+     "Your submission was received and have been recorded",
      "success"
     );
    } else if (
