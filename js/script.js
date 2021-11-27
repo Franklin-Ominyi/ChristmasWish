@@ -1,8 +1,26 @@
+const occupationContainer = document.querySelector("#occupation-container");
+
+const isStudent = document.form.education;
+
+const toggleOccupation = (e) => {
+ if (e === "no") {
+  occupationContainer.style.display = "flex";
+ } else {
+  occupationContainer.style.display = "none";
+ }
+};
+
+for (var i = 0; i < isStudent.length; i++) {
+ isStudent[i].addEventListener("change", () => {
+  toggleOccupation(isStudent.value);
+ });
+}
 const handleSubmit = (e) => {
  e.preventDefault();
  let fullName = document.querySelector("#name").value;
  let age = document.querySelector("#age").value;
  let phoneNumber = document.querySelector("#phoneNumber").value;
+ let occupationDOM = document.querySelector("#occupation").value;
  let email = document.querySelector("#email").value.toLowerCase();
  let facebookUsername = document.querySelector("#facebookUsername").value;
  let wish = document.querySelector("#wish").value;
@@ -13,6 +31,7 @@ const handleSubmit = (e) => {
  const data = {
   name: fullName,
   age,
+  occupation: occupationDOM ? occupationDOM : "",
   gender,
   phoneNumber,
   email,
