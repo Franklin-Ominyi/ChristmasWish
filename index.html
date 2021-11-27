@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Christmas Wish | Registration</title>
+ </head>
+ <body>
+  <div class="container">
+   <div class="overlay">
+    <div class="register-container">
+     <h1>Register</h1>
+
+     <form name="form" id="form">
+      <div class="input-container">
+       <label for="name">Name:</label>
+       <input type="text" placeholder="Your full name" id="name" required />
+      </div>
+
+      <div class="input-container">
+       <label for="age">Age:</label>
+       <input
+        type="number"
+        name="age"
+        placeholder="Your age"
+        id="age"
+        required
+       />
+      </div>
+
+      <div class="input-container">
+       <label for="email">Email:</label>
+       <input
+        type="email"
+        name="email"
+        placeholder="Your email address"
+        id="email"
+        required
+       />
+      </div>
+
+      <div class="input-container">
+       <label for="education">Gender</label>
+
+       <div class="radio-container">
+        <input type="radio" name="gender" value="male" />
+        <span class="opt">Male</span>
+       </div>
+
+       <div class="radio-container">
+        <input type="radio" name="gender" value="female" />
+        <span class="opt">Female</span>
+       </div>
+      </div>
+
+      <div class="input-container">
+       <label for="education">Are you a student</label>
+
+       <div class="radio-container">
+        <input type="radio" name="education" value="yes" />
+        <span class="opt">Yes</span>
+       </div>
+
+       <div class="radio-container">
+        <input type="radio" name="education" value="no" />
+        <span class="opt">No</span>
+       </div>
+      </div>
+
+      <div class="input-container">
+       <label for="phoneNumber">Phone Number:</label>
+       <input
+        type="tel"
+        name="phoneNumber"
+        placeholder="Your phone number"
+        id="phoneNumber"
+        required
+       />
+      </div>
+
+      <div class="input-container">
+       <label for="facebookUsername">Facebook Username:</label>
+       <input
+        name="facebookUsername"
+        type="text"
+        placeholder="Your facebook Username"
+        id="facebookUsername"
+        required
+       />
+      </div>
+
+      <div class="input-container">
+       <label for="wish">Wish</label>
+       <textarea
+        cols="20"
+        ,
+        rows="3"
+        name="wish"
+        type="text"
+        maxlength="50"
+        placeholder="Your Christmas Wish"
+        id="wish"
+        required
+       ></textarea>
+      </div>
+      <button type="submit" id="submitBtn">Submit</button>
+     </form>
+    </div>
+   </div>
+  </div>
+  <script src="/js/script.js"></script>
+ </body>
+</html>
