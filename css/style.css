@@ -140,7 +140,7 @@ button:hover {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 8px;
+    padding: 20px;
     border-radius: 4px;
     font-size: 18px;
     width: 95%;
@@ -174,7 +174,7 @@ button:hover {
   }
   .input-container input,
   .input-container textarea {
-    padding: 15px;
+    padding: 8px;
     outline: none;
     border: 1px solid #101010;
     border-radius: 5px;
