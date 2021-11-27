@@ -116,7 +116,7 @@ button:hover {
 
 @media (max-width: 760px) {
  .container {
-  height: 165vh;
+  height: 170vh;
   background-image: url("/img/background2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,7 +127,7 @@ button:hover {
  .overlay {
   position: absolute;
   width: 100%;
-  height: 165vh;
+  height: 170vh;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 2;
  }
