@@ -27,9 +27,10 @@ const handleSubmit = (e) => {
  let facebookUsername = document.querySelector("#facebookUsername").value;
  let wish = document.querySelector("#wish").value;
  const submitBtn = document.querySelector("#submitBtn");
- const isStudent = document.forms["form"]["education"].value;
- const gender = document.forms["form"]["gender"].value;
+ let isStudent = document.forms["form"]["education"].value;
+ let gender = document.forms["form"]["gender"].value;
 
+ submitBtn.style.display = "none";
  loader.style.display = "block";
 
  const data = {
@@ -58,6 +59,26 @@ const handleSubmit = (e) => {
      "Your submission was received and have been recorded",
      "success"
     );
+    submitBtn.style.display = "block";
+    // fullName = "";
+    // age = "";
+    // phoneNumber = "";
+    // occupationDOM = "";
+    // gender = "";
+    // isStudent = "";
+    // facebookUsername = "";
+    // wish = "";
+    document.querySelector("#name").value = "";
+    document.querySelector("#age").value = "";
+    document.querySelector("#phoneNumber").value = "";
+    document.querySelector("#occupation").value = "";
+    document.querySelector("#email").value = "";
+    document.querySelector("#facebookUsername").value = "";
+    document.querySelector("#wish").value = "";
+
+    document.querySelectorAll(".radio").forEach((item) => {
+     item.checked = false;
+    });
    } else if (
     res.error &&
     res.message === "Email or phone number already registered"
@@ -67,6 +88,7 @@ const handleSubmit = (e) => {
      "The email or phone number have been registered before",
      "error"
     );
+    submitBtn.style.display = "block";
     console.log("Already submitted before");
    }
   })
@@ -79,8 +101,10 @@ const handleSubmit = (e) => {
      "It seems like you are not connected to the internet",
      "error"
     );
+    submitBtn.style.display = "block";
    } else {
     Swal.fire("Ooops!", "An error occured, please try again later", "error");
+    submitBtn.style.display = "block";
    }
   });
 };
