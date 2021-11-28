@@ -3,6 +3,11 @@ const loader = document.querySelector("#loader");
 
 const isStudent = document.form.education;
 
+window.onload = () => {
+ document.querySelector(".page-loading").style.display = "none";
+ document.querySelector(".container").style.display = "block";
+};
+
 const toggleOccupation = (e) => {
  if (e === "no") {
   occupationContainer.style.display = "flex";

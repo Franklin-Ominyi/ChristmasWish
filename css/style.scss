@@ -4,8 +4,23 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
-
  font-family: "Montserrat", sans-serif;
+}
+
+.page-loading {
+ height: 100vh;
+ background-color: #000;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ color: #f0f8ff;
+
+ p {
+  margin-top: 10px;
+  font-size: 20px;
+ }
 }
 
 .container {
@@ -15,6 +30,7 @@
  background-size: cover;
  background-position: center;
  width: 100%;
+ display: none;
 }
 
 .overlay {

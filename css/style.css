@@ -7,6 +7,31 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.page-loading {
+  height: 100vh;
+  background-color: #000;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f0f8ff;
+}
+
+.page-loading p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
 .container {
   height: 160vh;
   background-image: url("/img/bg22.jpg");
@@ -14,6 +39,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
+  display: none;
 }
 
 .overlay {
