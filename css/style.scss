@@ -7,6 +7,10 @@
  font-family: "Montserrat", sans-serif;
 }
 
+.flex {
+ display: flex;
+}
+
 .page-loading {
  height: 100vh;
  background-color: #000;
@@ -96,6 +100,24 @@
  }
 }
 
+.radio-wrapper {
+ margin: 10px;
+
+ .header {
+  font-weight: 800;
+  color: #ddd;
+  font-size: 22px;
+ }
+
+ label {
+  font-size: 20px;
+  margin: 5px 0;
+  color: #ddd;
+  font-weight: 300;
+  margin-right: 4px;
+ }
+}
+
 button {
  outline: none;
  border: 1px solid #f0f8ff;
@@ -161,6 +183,7 @@ button:hover {
   label {
    font-size: 18px;
    margin: 5px 0;
+   color: #ddd;
   }
 
   span {
@@ -170,8 +193,9 @@ button:hover {
   input,
   textarea {
    padding: 8px;
+   height: 50px;
    border-radius: 5px;
-   font-size: 16px;
+   font-size: 18px;
   }
 
   input:focus,
@@ -184,5 +208,23 @@ button:hover {
   padding: 15px;
   font-size: 18px;
   border-radius: 10px;
+ }
+
+ .radio-wrapper {
+  margin: 10px;
+
+  .header {
+   font-weight: 800;
+   color: #ddd;
+   font-size: 18px;
+  }
+
+  label {
+   font-size: 18px;
+   margin: 5px 0;
+   color: #ddd;
+   font-weight: 300;
+   margin-right: 4px;
+  }
  }
 }
