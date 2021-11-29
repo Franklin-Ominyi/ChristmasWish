@@ -88,7 +88,7 @@ const handleSubmit = (e) => {
     document.querySelector("#coupon").value = "";
     document.querySelector("#account-name").value = "";
     document.querySelector("#account-number").value = "";
-    document.querySelector("#acount-bank").value = "";
+    document.querySelector("#account-bank").value = "";
     document.querySelector("#wish").value = "";
 
     document.querySelectorAll(".radio").forEach((item) => {
