@@ -32,6 +32,11 @@ const handleSubmit = (e) => {
  let occupationDOM = document.querySelector("#occupation").value;
  let email = document.querySelector("#email").value.toLowerCase();
  let facebookUsername = document.querySelector("#facebookUsername").value;
+ let coupon = document.querySelector("#coupon").value.toLowerCase();
+ let accountNumber = document.querySelector("#account-number").value;
+ let accountName = document.querySelector("#account-name").value;
+ let accountBank = document.querySelector("#account-bank").value;
+
  let wish = document.querySelector("#wish").value;
  const submitBtn = document.querySelector("#submitBtn");
  let isStudent = document.forms["form"]["education"].value;
@@ -49,38 +54,41 @@ const handleSubmit = (e) => {
   email,
   isStudent,
   facebookUsername,
+  coupon,
+  accountNumber,
+  accountName,
+  accountBank,
   wish,
  };
 
- fetch("https://pure-springs-87823.herokuapp.com/api/v1/user/register", {
+ fetch("http://localhost:3000/api/v1/user/register", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify(data),
  })
   .then((data) => data.json())
   .then((res) => {
+   console.log(res);
    loader.style.display = "none";
    if (!res.error) {
+    console.log("true");
     Swal.fire(
      "Congratulations!",
      "Your submission was received and have been recorded",
      "success"
     );
     submitBtn.style.display = "block";
-    // fullName = "";
-    // age = "";
-    // phoneNumber = "";
-    // occupationDOM = "";
-    // gender = "";
-    // isStudent = "";
-    // facebookUsername = "";
-    // wish = "";
+
     document.querySelector("#name").value = "";
     document.querySelector("#age").value = "";
     document.querySelector("#phoneNumber").value = "";
     document.querySelector("#occupation").value = "";
     document.querySelector("#email").value = "";
     document.querySelector("#facebookUsername").value = "";
+    document.querySelector("#coupon").value = "";
+    document.querySelector("#account-name").value = "";
+    document.querySelector("#account-number").value = "";
+    document.querySelector("#acount-bank").value = "";
     document.querySelector("#wish").value = "";
 
     document.querySelectorAll(".radio").forEach((item) => {
@@ -97,11 +105,22 @@ const handleSubmit = (e) => {
     );
     submitBtn.style.display = "block";
     console.log("Already submitted before");
+   } else if (res.error && res.message === "Coupon was already used") {
+    Swal.fire(
+     "Ooops!",
+     "The coupon code you inputed has been used before",
+     "error"
+    );
+    submitBtn.style.display = "block";
+   } else if (res.error && res.message === "Coupon is not valid") {
+    Swal.fire("Ooops!", "The coupon code you inputed is not valid", "error");
+    submitBtn.style.display = "block";
    }
   })
   .catch((err) => {
    loader.style.display = "none";
-   console.log(err.message);
+   console.log("eror");
+
    if (err.message === "Failed to fetch") {
     Swal.fire(
      "Ooops!",
@@ -112,8 +131,33 @@ const handleSubmit = (e) => {
    } else {
     Swal.fire("Ooops!", "An error occured, please try again later", "error");
     submitBtn.style.display = "block";
+    console.log(err);
    }
   });
 };
 
 document.querySelector("#form").addEventListener("submit", handleSubmit);
+// const coupon = async () => {
+//  let arr = [];
+//  for (let i = 0; i < 1000; i++) {
+//   const rans = Math.random().toString(36).substr(2, 6);
+//   arr[i] = rans;
+//  }
+
+//  const coupons = await arr;
+//  const data = coupons;
+//  fetch("http://localhost:3000/api/v1/admin/addcoupon", {
+//   method: "POST",
+//   headers: { "Content-Type": "application/json" },
+//   body: JSON.stringify(data),
+//  })
+//   .then((data) => data.json())
+//   .then((res) => {
+//    console.log(res);
+//   })
+//   .catch((err) => {
+//    console.log(err);
+//   });
+// };
+
+// coupon();
