@@ -27,7 +27,7 @@ for (var i = 0; i < isStudent.length; i++) {
 const handleSubmit = (e) => {
  e.preventDefault();
  let fullName = document.querySelector("#name").value;
- let age = document.querySelector("#age").value;
+
  let phoneNumber = document.querySelector("#phoneNumber").value;
  let occupationDOM = document.querySelector("#occupation").value;
  let email = document.querySelector("#email").value.toLowerCase();
@@ -47,7 +47,6 @@ const handleSubmit = (e) => {
 
  const data = {
   name: fullName,
-  age,
   occupation: occupationDOM ? occupationDOM : "",
   gender,
   phoneNumber,
@@ -80,7 +79,6 @@ const handleSubmit = (e) => {
     submitBtn.style.display = "block";
 
     document.querySelector("#name").value = "";
-    document.querySelector("#age").value = "";
     document.querySelector("#phoneNumber").value = "";
     document.querySelector("#occupation").value = "";
     document.querySelector("#email").value = "";
