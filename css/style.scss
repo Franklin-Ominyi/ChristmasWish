@@ -336,7 +336,7 @@ button:hover {
    }
    .items {
     font-size: 18px;
-    color: #f0f8ff;
+    color: #ddd;
    }
    .register {
     font-size: 18px;
@@ -345,17 +345,7 @@ button:hover {
 
    a {
     font-size: 20px;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    background-color: #000;
-    border: 1px solid white;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-     background-color: #101010;
-    }
+    padding: 15px;
    }
   }
  }
