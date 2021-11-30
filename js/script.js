@@ -6,7 +6,7 @@ const isStudent = document.form.education;
 window.onload = () => {
  if (document.readyState === "complete") {
   document.querySelector(".page-loading").style.display = "none";
-  document.querySelector(".container").style.display = "block";
+  document.querySelector(".container").style.display = "flex";
  }
 };
 
