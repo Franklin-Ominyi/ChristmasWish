@@ -118,7 +118,7 @@
 }
 
 .radio-wrapper .header {
-  font-weight: 800;
+  font-weight: 600;
   color: #ddd;
   font-size: 22px;
 }
@@ -197,7 +197,6 @@ button:hover {
   .input-container label {
     font-size: 18px;
     margin: 5px 0;
-    color: #ddd;
   }
   .input-container span {
     font-size: 18px;
@@ -208,10 +207,6 @@ button:hover {
     border-radius: 5px;
     font-size: 18px;
   }
-  .input-container input:focus,
-  .input-container textarea:focus {
-    border: 1px solid #800080;
-  }
   button {
     padding: 15px;
     font-size: 18px;
@@ -221,7 +216,6 @@ button:hover {
     margin: 10px;
   }
   .radio-wrapper .header {
-    font-weight: 800;
     color: #ddd;
     font-size: 18px;
   }

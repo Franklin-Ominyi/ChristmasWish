@@ -97,7 +97,7 @@
  margin: 10px;
 
  .header {
-  font-weight: 800;
+  font-weight: 600;
   color: #ddd;
   font-size: 22px;
  }
@@ -174,7 +174,6 @@ button:hover {
   label {
    font-size: 18px;
    margin: 5px 0;
-   color: #ddd;
   }
 
   span {
@@ -186,11 +185,6 @@ button:hover {
    padding: 12px 8px;
    border-radius: 5px;
    font-size: 18px;
-  }
-
-  input:focus,
-  textarea:focus {
-   border: 1px solid #800080;
   }
  }
 
@@ -204,7 +198,6 @@ button:hover {
   margin: 10px;
 
   .header {
-   font-weight: 800;
    color: #ddd;
    font-size: 18px;
   }
