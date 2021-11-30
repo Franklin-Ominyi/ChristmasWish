@@ -5,191 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/style.css" />
-  <link
-   rel="stylesheet"
-   href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css"
-  />
+
   <link
    rel="stylesheet"
    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
 
-  <title>Christmas Wish | Registration</title>
+  <title>Christmas Wish | Landing Page</title>
  </head>
  <body>
-  <div class="page-loading">
-   <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i>
-   <p>Loading....</p>
-  </div>
-  <div class="container">
-   <div class="overlay">
-    <!-- <h1>
-     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam corrupti
-     incidunt natus dicta!
-    </h1> -->
-    <div class="register-container">
-     <h1>Register</h1>
+  <main>
+   <div class="main-overlay">
+    <div class="content">
+     <h1>Do you have a wish?</h1>
+     <p class="semi-bold">
+      Is there anything you want for yourself during this festive period or the
+      new year?
+     </p>
 
-     <form name="form" id="form">
-      <div class="input-container">
-       <label for="name">Name</label>
-       <input type="text" placeholder="Your full name" id="name" required />
-      </div>
-
-      <div class="input-container">
-       <label for="email">Email</label>
-       <input
-        type="email"
-        name="email"
-        placeholder="Your email address"
-        id="email"
-        required
-       />
-      </div>
-
-      <div class="input-container">
-       <label for="phoneNumber">Phone Number</label>
-       <input
-        type="tel"
-        name="phoneNumber"
-        placeholder="Your phone number"
-        id="phoneNumber"
-        required
-       />
-      </div>
-
-      <div class="input-container">
-       <label for="facebookUsername">Facebook Username</label>
-       <input
-        name="facebookUsername"
-        type="text"
-        placeholder="Your facebook Username"
-        id="facebookUsername"
-        required
-       />
-      </div>
-
-      <div class="input-container">
-       <label for="coupon">Coupon Code</label>
-       <input
-        type="text"
-        name="coupon"
-        placeholder="Input Coupon Code"
-        id="coupon"
-        maxlength="6"
-        required
-       />
-      </div>
-
-      <div class="input-container">
-       <label for="account-number">Bank Account Number</label>
-       <input
-        type="number"
-        name="account-number"
-        placeholder="Your Account Number"
-        id="account-number"
-        required
-       />
-      </div>
-
-      <div class="input-container">
-       <label for="account-name">Bank Account Name</label>
-       <input
-        type="text"
-        name="account-name"
-        placeholder="Input bank account name"
-        id="account-name"
-        max="6"
-        required
-       />
-      </div>
-
-      <div class="input-container">
-       <label for="account-bank">Bank Name</label>
-       <input
-        type="text"
-        name="account-bank"
-        placeholder="Input Bank Name"
-        id="account-bank"
-        max="6"
-        required
-       />
-      </div>
-
-      <div class="radio-wrapper">
-       <span class="header">Gender</span>
-       <div class="radio-container">
-        <input
-         id="male"
-         type="radio"
-         class="radio"
-         name="gender"
-         value="male"
-        />
-        <label for="male" class="opt">Male</label>
-       </div>
-
-       <div class="radio-container">
-        <input
-         type="radio"
-         id="female"
-         class="radio"
-         name="gender"
-         value="female"
-        />
-        <label for="female" class="opt">Female</label>
-       </div>
-      </div>
-
-      <div class="radio-wrapper">
-       <span class="header">Are you a student</span>
-
-       <div class="radio-container">
-        <input
-         id="yes"
-         type="radio"
-         class="radio"
-         name="education"
-         value="yes"
-        />
-        <label for="yes" class="opt">Yes</label>
-       </div>
-
-       <div class="radio-container">
-        <input id="no" type="radio" class="radio" name="education" value="no" />
-        <label for="no" class="opt">No</label>
-       </div>
-      </div>
-
-      <div class="input-container" id="occupation-container">
-       <label for="occupation">Occupation</label>
-       <input type="text" placeholder="Your occupation" id="occupation" />
-      </div>
-
-      <div class="input-container">
-       <label for="wish">Your Christmas Wish</label>
-       <textarea
-        cols="20"
-        ,
-        rows="3"
-        name="wish"
-        type="text"
-        maxlength="80"
-        placeholder="Your Christmas Wish"
-        id="wish"
-        required
-       ></textarea>
-      </div>
-      <div id="loader">
-       <i class="fa fa-spinner fa-spin fa-2x" aria-hidden="true"></i>
-      </div>
-      <button type="submit" id="submitBtn">Submit</button>
-     </form>
+     <p class="items">Like phone, laptop, clothes, shoes, jewelries etc</p>
+     <br />
+     <p class="register">
+      By registering on this platform and following the guidelines provided, we
+      will do what we can to make your <b> Wish</b> a <b>REALITY</b>
+     </p>
+     <br />
+     <br />
+     <br />
+     <div>
+      <a href="/register.html">Register</a>
+     </div>
     </div>
    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+  </main>
   <script src="/js/script.js"></script>
  </body>
 </html>
