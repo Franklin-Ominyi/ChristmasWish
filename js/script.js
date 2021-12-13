@@ -73,7 +73,7 @@ const handleSubmit = (e) => {
     console.log("true");
     Swal.fire(
      "Congratulations!",
-     "Your submission was received and have been recorded.  NB - You are expected to advertise this platform on your Facebook page before you will be credited.",
+     "Your submission was received and have been recorded. "+ "\n "+ "\n" +"NB - You are expected to advertise this platform on your Facebook page before you will be credited.",
      "success"
     );
     submitBtn.style.display = "block";
