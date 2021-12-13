@@ -73,7 +73,7 @@ const handleSubmit = (e) => {
     console.log("true");
     Swal.fire(
      "Congratulations!",
-     "Your submission was received and have been recorded",
+     "Your submission was received and have been recorded.  NB - You are expected to advertise this platform on your Facebook page before you will be credited.",
      "success"
     );
     submitBtn.style.display = "block";
@@ -136,10 +136,7 @@ const handleSubmit = (e) => {
 
 document.querySelector("#form").addEventListener("submit", handleSubmit);
 // const coupon = async () => {
-//  let arr = [];
-//  for (let i = 0; i < 1000; i++) {
-//   const rans = Math.random().toString(36).substr(2, 6);
-//   arr[i] = rans;
+//   
 //  }
 
 //  const coupons = await arr;
