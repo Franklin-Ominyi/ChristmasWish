@@ -1,6 +1,6 @@
 const occupationContainer = document.querySelector("#occupation-container");
 const loader = document.querySelector("#loader");
-
+console.log("hello world")
 const isStudent = document.form.education;
 
 window.onload = () => {
