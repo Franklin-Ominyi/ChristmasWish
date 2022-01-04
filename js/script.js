@@ -113,6 +113,16 @@ const handleSubmit = (e) => {
    } else if (res.error && res.message === "Coupon is not valid") {
     Swal.fire("Ooops!", "The coupon code you inputed is not valid", "error");
     submitBtn.style.display = "block";
+   } else if (
+    res.error &&
+    res.message === "Your registration was not successful, try again later"
+   ) {
+    Swal.fire(
+     "Ooops!",
+     "Your registration was not successful, please try again later",
+     "error"
+    );
+    submitBtn.style.display = "block";
    }
   })
   .catch((err) => {
